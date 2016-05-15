@@ -1,4 +1,4 @@
-__author__ = 'vikesh'
+__author__ = 'riyaaz'
 
 import os
 import wolframalpha
@@ -24,11 +24,11 @@ app = Flask(__name__)
 client = wolframalpha.Client(wol_id)
 
 
-@app.route('/thel',methods=['post'])
-def thel():
+@app.route('/riyaaz',methods=['post'])
+def riyaaz():
     '''
     :Example:
-    /thel current weather in mumbai?
+    /riyaaz current weather in mumbai?
     '''
     text = request.values.get('text')
     try:
@@ -45,7 +45,7 @@ def thel():
 
 @app.route('/')
 def hello():
-    return redirect('https://github.com/vicky002/slack-TheL')
+    return redirect('https://riyaaz.org')
 
 
 if __name__ == '__main__':
